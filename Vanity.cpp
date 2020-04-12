@@ -1480,7 +1480,8 @@ void VanitySearch::Search(bool useGpu, std::vector<int> gpuId, std::vector<int> 
 
   /////////////////////////////////////////////////
   // profiles load
-
+  xU = 0;    
+  xV = 0;
   // number kangaroos of herd T/W
   if (nbCPUThread == 1 || nbCPUThread == 2) {
 	  xU = xV = 1;
