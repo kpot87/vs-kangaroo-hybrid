@@ -756,7 +756,7 @@ void VanitySearch::getGPUStartingKeys(int thId, int groupSize, int nbThread, Int
 
 void VanitySearch::getGPUStartingWKeys(int thId, int groupSize, int nbThread, Point w_targetPubKey, Int *w_keys, Point *w_p) {
 
-  int wl = 1;//int wl = 0;
+  int wl = 0;// set optimal space
   int wrbit = pow2W - wl;// pow2W-1 ?
   printf("\nGPU Wild Points: [Target] + Rand(pow2W-%d) ", wl);
   for (int i = 0; i < nbThread; i++) {
