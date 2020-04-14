@@ -1149,7 +1149,7 @@ void VanitySearch::FindKeyGPU(TH_PARAM *ph) {
 			//printf("\n    type: %d \n", (int)it.type);// type 2 - Wild, 1 - Tame
 			
 			// Check Output Data GPU and Compute Tame keys
-			if (it.type == 1) { //if (0) {
+			if (0) { //if (it.type == 1) { 
 				Int chk(&Tkey);
 				chp = secp->ComputePubKey(&chk);
 				if (strcmp(Tpx.GetBase16().c_str(), chp.x.GetBase16().c_str()) != 0) {
